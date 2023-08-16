@@ -1,0 +1,62 @@
+.mainPageWrap {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    
+}
+
+.editor{
+    background:#0f1a33 ;
+}
+.aside {
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.asideInner {
+    flex: 1;
+}
+
+.clientsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap :20px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+   
+}
+
+.username{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.logo{
+    border-bottom: 1px solid #b0cdf1;
+    padding-bottom: 10px;
+}
+
+.logoImg {
+    height: 55px;
+}
+
+.leaveBtn {
+    background: #60ffd9;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.CodeMirror {
+    min-height: calc(100vh - 20px);
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 20px;
+}
