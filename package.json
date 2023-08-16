@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "server:dev":"nodemon server.js",
+    "server:dev": "nodemon server.js",
     "server:prod": "node server.jser",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
