@@ -1,16 +1,20 @@
 import express from "express";
-
 import http from "http";
 import { Server } from "socket.io";
 import { ACTIONS } from "./src/Action.js"
+import path from "path";
 
 const app = express();
-
 const server = http.createServer(app);
-
 const io = new Server(server);
-
 const userSocketMap = {}; //{'asdfrthjjkl' : snehal} => map the socket id to that user
+
+
+app.use(express.static('dist'));
+
+app.use((res,req,next)=>{
+  res.sendFile(path.join(__dirname,'dist','index.html'))
+})
 
 const getAllConnectedClient = (roomId) => {
   const connectedClientsSet = io.sockets.adapter.rooms.get(roomId); // Get the Set of connected clients in the room
