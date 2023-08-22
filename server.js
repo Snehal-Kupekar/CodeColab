@@ -10,7 +10,7 @@ const io = new Server(server);
 const userSocketMap = {}; //{'asdfrthjjkl' : snehal} => map the socket id to that user
 
 
-app.use(express.static('dist'));
+// app.use(express.static('dist'));
 
 app.use((res,req,next)=>{
   res.sendFile(path.join(__dirname,'dist','index.html'))
