@@ -9,7 +9,7 @@ import {io} from 'socket.io-client';
   };
 
   // const socketURl = 'http://localhost:5000';
-  const socketURL = process.env.REACT_APP_SOCKET_URL || 'http://localhost:5000';
+  const socketURL = process.env.REACT_APP_SOCKET_URL || 'https://code-unite-backend.onrender.com';
   return io( socketURL, options);
 };
 // 

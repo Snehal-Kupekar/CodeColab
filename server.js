@@ -12,9 +12,9 @@ const userSocketMap = {}; //{'asdfrthjjkl' : snehal} => map the socket id to tha
 
 // app.use(express.static('dist'));
 
-app.use((res,req,next)=>{
-  res.sendFile(path.join(__dirname,'dist','index.html'))
-})
+// app.use((res,req,next)=>{
+//   res.sendFile(path.join(__dirname,'dist','index.html'))
+// })
 
 const getAllConnectedClient = (roomId) => {
   const connectedClientsSet = io.sockets.adapter.rooms.get(roomId); // Get the Set of connected clients in the room
