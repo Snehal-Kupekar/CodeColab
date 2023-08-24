@@ -60,3 +60,15 @@
     line-height: 1.6;
     padding-top: 20px;
 }
+
+@media screen and (max-width: 480px) {
+    .mainPageWrap {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        
+    }
+    
+    .logoImg {
+        height: 40px;
+    }
+  }
